@@ -1,0 +1,19 @@
+fun main(args:Array<String>)
+{
+    println("enter the no of elements in the list")
+    var elements:Int=Integer.valueOf(readLine())
+    var arr= mutableListOf<String>()
+    for(i in 0..elements-1)
+    {
+        var ele=readLine()
+        ele?.let {
+            arr.add(ele)
+        }
+    }
+    var asc=arr.sorted()
+    var des= arr.sortedDescending()
+    print("ascending order is:")
+    println(asc)
+    print("descending order is:")
+    println(des)
+}
